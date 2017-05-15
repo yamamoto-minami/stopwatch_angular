@@ -14,12 +14,7 @@
   <div class="outer">
     <div class="middle">
       <div id="timer-container" ng-controller="timerController">
-        <div id="timer" class="digifont">
-          {{timeStatus.minutes}}
-          <span class="seperator" ng-class="{'blinking-colon' : timerIsRunning}">:</span>
-          {{timeStatus.seconds}}
-          <span class="seperator" ng-class="{'blinking-colon' : timerIsRunning}">.</span>
-          {{timeStatus.ms}}
+        <div id="timer" class="digifont">{{timeStatus.minutes}}<span class="seperator" ng-class="{'blinking-colon' : timerIsRunning}">:</span>{{timeStatus.seconds}}<span class="seperator" ng-class="{'blinking-colon' : timerIsRunning}">.</span>{{timeStatus.ms}}
         </div>
         <div class="buttons">
           <div class="action-btn-wrapper">
